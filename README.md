@@ -1,4 +1,14 @@
-# CCAA
+# CCAA (Personal Revised Version)
+
+### Revised Description
+
+This personal revised verison is based on https://github.com/helloxz/ccaa.
+
+It mainly switchs the user `ccaa` to `root`, therefore making FileBrowser able to cope with files or folders that require higher permissions.
+
+To make installations success, repo links are also replaced to this one.
+
+### Original Description
 
 原为`CentOS + Caddy + AriaNg + Aria2`，故命名为CCAA，不过现在不仅仅支持CentOS，主流的Debian、Ubuntu也已经支持，自2.0版本已移除Caddy，改用Golang写了一个简单的webserver来运行AriaNg
 
@@ -25,9 +35,9 @@
 一键安装脚本（使用root用户）：
 ```bash
 #海外
-bash <(curl -Lsk https://raw.githubusercontent.com/helloxz/ccaa/master/ccaa.sh)
+bash <(curl -Lsk https://raw.githubusercontent.com/if1y/ccaa/master/ccaa.sh)
 #国内
-bash <(curl -Lsk https://raw.githubusercontent.com/helloxz/ccaa/master/ccaa.sh) cdn
+bash <(curl -Lsk https://raw.githubusercontent.com/if1y/ccaa/master/ccaa.sh) cdn
 ```
 如果出现`-bash: curl: command not found`错误，说明`curl`命令没安装，请输入下面的命令先安装`curl`，再回过头来执行上面的命令再来一次。
 
@@ -66,13 +76,3 @@ docker run --name="ccaa" -d -p 6080:6080 -p 6081:6081 -p 6800:6800 -p 51413:5141
 ![](https://imgurl.org/upload/1810/e8bf5842058b46c5.png)
 
 ![](https://imgurl.org/upload/1810/1180fb03eb3117ce.png)
-
-### 联系我
-
-* Blog: [https://www.xiaoz.me/](https://www.xiaoz.me/)
-* QQ: 337003006
-* 技术交流群: 147687134
-
-### 请我喝一杯咖啡
-
-![](https://imgurl.org/upload/1712/cb349aa4a1b95997.png)
