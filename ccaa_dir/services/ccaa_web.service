@@ -1,0 +1,9 @@
+[Unit]
+Description=ccaa_web
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/sudo -u root /usr/sbin/ccaa_web
+
+[Install]
+WantedBy=multi-user.target
