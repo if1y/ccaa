@@ -8,6 +8,21 @@ It mainly switchs the user `ccaa` to `root`, therefore making FileBrowser able t
 
 To make installations success, repo links are also replaced to this one.
 
+### Added Description
+
+Update [FileBrowser](https://github.com/filebrowser/filebrowser)
+
+```
+mkdir /root/filebrowser-tmp
+cd /root/filebrowser-tmp
+wget https://github.com/filebrowser/filebrowser/releases/latest/download/linux-amd64-filebrowser.tar.gz
+tar -zxvf linux-amd64-filebrowser.tar.gz
+rm -rf /usr/sbin/filebrowser
+mv filebrowser /usr/sbin
+rm -rf /root/filebrowser-tmp
+ccaa restart
+```
+
 ### Original Description
 
 原为`CentOS + Caddy + AriaNg + Aria2`，故命名为CCAA，不过现在不仅仅支持CentOS，主流的Debian、Ubuntu也已经支持，自2.0版本已移除Caddy，改用Golang写了一个简单的webserver来运行AriaNg
