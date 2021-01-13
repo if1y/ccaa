@@ -19,6 +19,7 @@ wget https://github.com/filebrowser/filebrowser/releases/latest/download/linux-a
 tar -zxvf linux-amd64-filebrowser.tar.gz
 rm -rf /usr/sbin/filebrowser
 mv filebrowser /usr/sbin
+cd
 rm -rf /root/filebrowser-tmp
 ccaa restart
 ```
